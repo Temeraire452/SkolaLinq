@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Welcome to the School System</h1>
+
+<ul>
+    <li><a href="@Url.Action("TeachersProgramming", "School")">Lärare i Programmering 1</a></li>
+    <li><a href="@Url.Action("StudentsWithTeachers", "School")">Elever och deras lärare</a></li>
+    <li><a href="@Url.Action("StudentsProgrammingTeachers", "School")">Elever i programmering 1 och lärare</a></li>
+    <li><a href="@Url.Action("EditCourseName", "School")">Ändra kurs namn</a></li>
+    <li><a href="@Url.Action("ChangeTeacher", "School")">Ändra lärare</a></li>
+</ul>

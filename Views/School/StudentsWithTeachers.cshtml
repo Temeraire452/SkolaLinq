@@ -1,0 +1,16 @@
+﻿@model List<Student>
+
+<h2>Elever och deras lärare</h2>
+
+@foreach (var student in Model)
+{
+    <h3>@student.StudentName</h3>
+    <ul>
+        @foreach (var course in student.Courses)
+        {
+            <li>Kurs: @course.CourseName, Lärare: @course.Teacher.TeacherName</li>
+        }
+    </ul>
+}
+
+<a href="@Url.Action("Index", "School")">Tillbaka till menyn</a>

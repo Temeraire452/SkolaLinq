@@ -1,0 +1,12 @@
+﻿@model IEnumerable<SkolaLinq.Models.Teacher>
+
+<h2>Lärare som undervisar i “programmering 1”</h2>
+
+<ul>
+    @foreach (var teacher in Model)
+    {
+        <li>@teacher.TeacherName</li>
+    }
+</ul>
+
+<a href="@Url.Action("Index", "School")">Tillbaka till menyn</a>

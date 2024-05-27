@@ -1,0 +1,14 @@
+﻿@model IEnumerable<StudentTeacherViewModel>
+
+<h2>Elever som läser “programmering 1” och deras lärare</h2>
+
+<ul>
+    @foreach (var studentTeacher in Model)
+    {
+        <li>
+            <strong>Student:</strong> @studentTeacher.StudentName, <strong>Lärare:</strong> @studentTeacher.TeacherName
+        </li>
+    }
+</ul>
+
+<a href="@Url.Action("Index", "School")">Tillbaka till menyn</a>
